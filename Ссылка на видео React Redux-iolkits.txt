@@ -1,0 +1,8 @@
+React Redux + Saga. Практический Курс
+https://www.youtube.com/watch?v=G3GGXIhggGs
+
+https://getbootstrap.com/docs/4.4/getting-started/introduction/
+
+
+второй вариант
+https://www.youtube.com/watch?v=_j4k73zoy5Y
