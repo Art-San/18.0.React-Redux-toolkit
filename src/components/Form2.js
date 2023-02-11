@@ -1,16 +1,24 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addPost } from '../features/post/postSlice'
 
 const Form2 = () => {
-    const [state, setState] = useState('')
+    const dispatch = useDispatch()
+    const [state, setState] = useState({ title: '', id: ''})
 
     const submitHendler = (event) => {
+        // console.log('event', event)
         event.preventDefault()
         const {title} = state
         const newPost = {
-            title, id: Date.now().toString()
+            id: Date.now().toString(),
+            title,
+            completed: true
         }
-        setState( {title: ''})
         console.log(newPost)
+        dispatch(addPost(newPost))
+        setState( {title: ''})
+        
     }
 
     const chengeInputHandler = ({ target }) => {

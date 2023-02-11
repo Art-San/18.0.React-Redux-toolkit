@@ -4,9 +4,10 @@ import TodoItem from './components/TodoItem'
 import User from './components/User'
 import Posts from './components/Posts'
 import { useSelector } from 'react-redux'
+// import Form2 from './components/Form2'
 // import Posts2 from './components/Posts2'
 // import FetchPosts from './components/FetchPosts'
-// import Form2 from './components/Form2'
+
 
 function App() {
     const todos = useSelector((state) => state.todo.todos)
@@ -37,24 +38,25 @@ function App() {
                 </header>
             </div>
         </div>
-        {/* <div className='min-h-min h-full w-screen bg-blue-300'>
+        <div className='min-h-min h-full w-screen bg-blue-300'>
             <div className='container mx-auto px-4'>
             <footer className='flex gap-20 '>
                     <div className='w-1/3'>
-                        <Form2/>
+                        {/* <Form2/>
+                        <Posts2/> */}
                     </div>
                     <div className='w-1/3'>
                         <div>Синхронные посты</div>
-                        <Posts2 posts={[1, 2, 3]}/>
+                        {/* <Posts2/> */}
                         
                     </div>
                     <div className='w-1/3'>
                     <div>Асинхронные посты</div>
-                        <FetchPosts posts={[]}/>
+                        {/* <FetchPosts posts={[]}/> */}
                     </div>
                 </footer>
             </div>
-        </div> */}
+        </div>
         
         </>
     )
